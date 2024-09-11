@@ -4,6 +4,7 @@
 
 int main() {
     int jourIndex;
+     
     srand(time(NULL));
     jourIndex = rand() % 7;
     if (jourIndex == 0) {
