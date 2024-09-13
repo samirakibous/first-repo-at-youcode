@@ -11,6 +11,7 @@ int main()
 
     do {
         printf("voici le menu principal:\n");
+
         printf("1. Cliquez pour ajouter un etudiant\n");
         printf("2. Cliquez pour afficher la moyenne\n");
         printf("3. Cliquez pour afficher les meilleures et moins bonnes notes avec les nom d'etudiants\n");
@@ -30,7 +31,7 @@ int main()
                 compteur++;
                 sommeNotes=sommeNotes+note;
                 if (note < note_min) {
-                    note_min=note;
+                    note_min=note;                                       
                     strcpy(nom_min, nom); 
                 }
                 if (note > note_max) {
@@ -75,7 +76,6 @@ int main()
 
                
         }             
-    } while (choix!=5);
-
+    } while (choix!=5);                                 
     return 0;
 }
